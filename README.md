@@ -1,4 +1,7 @@
-This is a mirror of Richard WM Jones's excellent literate x86 assembly
+
+# JONESFORTH
+
+This is a fork of Richard WM Jones's excellent literate x86 assembly
 implementation of Forth, more on which here:
 http://rwmj.wordpress.com/2010/08/07/jonesforth-git-repository/
 
