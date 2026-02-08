@@ -7,8 +7,8 @@
 100 CELLS ALLOT CONSTANT BUFFER
 
 : TEST
-	S" test_read_file.f.out" R/O OPEN-FILE
-	?DUP IF S" test_read_file.f.out" PERROR QUIT THEN
+	S" tests/test_read_file.f.out" R/O OPEN-FILE
+	?DUP IF S" tests/test_read_file.f.out" PERROR QUIT THEN
 
 	TO FD
 

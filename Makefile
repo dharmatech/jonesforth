@@ -18,11 +18,11 @@ clean:
 
 # Tests.
 
-TESTS	:= $(patsubst %.f,%.test,$(wildcard test_*.f))
+TESTS	:= $(patsubst tests/%.f,%.test,$(wildcard tests/test_*.f))
 
 test check: $(TESTS)
 
-test_%.test: test_%.f jonesforth
+test_%.test: tests/test_%.f jonesforth
 	@echo -n "$< ... "
 	@rm -f .$@
 	@cat <(echo ': TEST-MODE ;') jonesforth.f $< <(echo 'TEST') | \
